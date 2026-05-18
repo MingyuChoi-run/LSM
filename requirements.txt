@@ -1,0 +1,15 @@
+torch==2.0.1
+torchvision==0.15.2
+numpy==1.24.3
+opencv-python==4.9.0.80
+scipy==1.10.1
+pyyaml==6.0.1
+tqdm==4.66.2
+einops==0.7.0
+timm==0.9.16
+matplotlib==3.7.5
+tensorboard==2.14.0
+lmdb
+fvcore
+pyiqa
+jax

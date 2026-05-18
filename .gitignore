@@ -1,0 +1,45 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.env
+.venv/
+venv/
+*.egg-info/
+
+# Datasets
+datasets/*
+!datasets/README.md
+
+# Results
+results/*
+!results/README.md
+!results/.gitkeep
+
+# Experiments and checkpoints
+experiments/*
+!experiments/pretrained_models/
+!experiments/pretrained_models/.gitkeep
+
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.tar
+*.zip
+
+# Logs
+*.log
+tb_logger/
+wandb/
+runs/
+training_states/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

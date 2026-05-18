@@ -1,0 +1,100 @@
+# general settings
+name: test_LSM_S_SR_x3_finetune
+model_type: LSMModel
+scale: 3
+num_gpu: 1
+manual_seed: 10
+
+datasets:
+  test_1:  # the 1st test dataset
+    task: SR
+    name: Set5
+    type: PairedImageDataset
+    dataroot_gt: ./datasets/SR/Set5/HR
+    dataroot_lq: ./datasets/SR/Set5/LR_bicubic/X3
+    filename_tmpl: '{}x3'
+    io_backend:
+      type: disk
+
+  test_2:  # the 2st test dataset
+    task: SR
+    name: Set14
+    type: PairedImageDataset
+    dataroot_gt: ./datasets/SR/Set14/HR
+    dataroot_lq: ./datasets/SR/Set14/LR_bicubic/X3
+    filename_tmpl: '{}x3'
+    io_backend:
+      type: disk
+
+  test_3:  # the 3st test dataset
+    task: SR
+    name: B100
+    type: PairedImageDataset
+    dataroot_gt: ./datasets/SR/B100/HR
+    dataroot_lq: ./datasets/SR/B100/LR_bicubic/X3
+    filename_tmpl: '{}x3'
+    io_backend:
+      type: disk
+
+  test_4:  # the 4st test dataset
+    task: SR
+    name: Urban100
+    type: PairedImageDataset
+    dataroot_gt: ./datasets/SR/Urban100/HR
+    dataroot_lq: ./datasets/SR/Urban100/LR_bicubic/X3
+    filename_tmpl: '{}x3'
+    io_backend:
+      type: disk
+
+  test_5:  # the 5st test dataset
+    task: SR
+    name: Manga109
+    type: PairedImageDataset
+    dataroot_gt: ./datasets/SR/Manga109/HR
+    dataroot_lq: ./datasets/SR/Manga109/LR_bicubic/X3
+    filename_tmpl: '{}_LRBI_x3'
+    io_backend:
+      type: disk
+
+
+# network structures
+network_g:
+  type: LSM
+  upscale: 3
+  in_chans: 3
+  img_size: 64
+  d_state: 32
+  img_range: 1.
+  depth: [5,5,5,5,5,5]
+  embed_dim: 180
+  num_heads: [5,5,5,5,5,5]
+  mlp_ratio: 2.0
+  resi_connection: '1conv'
+  split_size: [8,32]
+  rmin: 0.9
+  rmax: 0.99
+  max_phase: 6.283
+  num_tokens: 128
+
+
+# path
+path:
+  pretrain_network_g: experiments/train_LSM_S_SR_x3_finetune/models/net_g_best.pth
+  strict_load_g: True
+  param_key_g: params_ema
+
+# validation settings
+val:
+  save_img: false
+  suffix: ~  # add suffix to saved images, if None, use exp name
+  use_chop: false  # True to save memory, if img too large
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 3
+      test_y_channel: True
+    ssim:
+      type: calculate_ssim
+      crop_border: 3
+      test_y_channel: True
