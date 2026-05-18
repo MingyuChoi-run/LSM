@@ -36,7 +36,8 @@ CVPR 2026 Findings
 </p>
 
 <p align="center">
-  <img src="figures/network_sub.png" width="95%">
+  <img src="figures/network_sub.png" width="48%">
+  <img src="figures/initialization.png" width="48%">
 </p>
 
 ## Contents
