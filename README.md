@@ -121,9 +121,9 @@ python -m torch.distributed.launch --nproc_per_node=8 --master_port=1111 basicsr
 # input size = 96x96, x2 finetune
 python -m torch.distributed.launch --nproc_per_node=8 --master_port=1111 basicsr/train.py -opt options/train/train_LSM_S_SR_x2_finetune.yml --launcher pytorch
 # input size = 96x96, x3 finetune
-CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=8 --master_port=1111 basicsr/train.py -opt options/train/train_LSM_S_SR_x3_finetune.yml --launcher pytorch
+python -m torch.distributed.launch --nproc_per_node=8 --master_port=1111 basicsr/train.py -opt options/train/train_LSM_S_SR_x3_finetune.yml --launcher pytorch
 # input size = 96x96, x4 finetune
-CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=8 --master_port=1111 basicsr/train.py -opt options/train/train_LSM_S_SR_x4_finetune.yml --launcher pytorch
+python -m torch.distributed.launch --nproc_per_node=8 --master_port=1111 basicsr/train.py -opt options/train/train_LSM_S_SR_x4_finetune.yml --launcher pytorch
 ```
 
 </details>
@@ -179,15 +179,7 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 -
 
 Pretrained models will be released soon.
 
-After downloading the pretrained models, put them into the folder:
-
-```text
-experiments/pretrained_models/
-```
-
-### Commands
-
-Follow the instructions in `options/test` folder to begin testing our model.
+After downloading the pretrained models, put them into the `experiments/pretrained_models` folder
 
 ### Commands
 
