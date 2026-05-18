@@ -106,8 +106,6 @@ Used training and testing sets can be downloaded as follows:
 | Grayscale JPEG CAR | [DIV2K](https://cv.snu.ac.kr/research/EDSR/DIV2K.tar) (800 images) + [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar) (2650 images) + [WED](https://ivc.uwaterloo.ca/database/WaterlooExploration/exploration_database_and_code.rar) (4744 images) + [BSD500](https://drive.google.com/file/d/12oYmda-cC54XG5019EI17g0GG9qxybe9/view?usp=sharing) (500 images) | Classic5 + LIVE1 + Urban100 [[download]](https://drive.google.com/file/d/16rZLCcLg9yXD9jyromwy4UL0A5AhU_Wm/view?usp=sharing) |
 | Image Deraining | [Rain13K](https://drive.google.com/file/d/14BidJeG4nSNuFNFDf99K-7eErCq4i47t/view?usp=sharing) (13,712 clean/rain image pairs) | Test2800 [[download]](https://drive.google.com/file/d/1P_-RAvltEoEhfT-9GrWRdpEi6NSswTs8/view?usp=sharing) |
 
-After downloading the datasets and putting them into the folder `datasets/`, use the code `python scripts/extract_subimages.py` and `python scripts/generate_patches_dfwb.py` to extract image patches for training.
-
 ### Commands
 
 Follow the instructions in `options/train` folder to begin training our model.
