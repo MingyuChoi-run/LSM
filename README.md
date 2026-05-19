@@ -17,7 +17,7 @@ CVPR 2026 Findings
   <a href="####">
     <img src="https://img.shields.io/badge/arXiv-Coming%20Soon-b31b1b?style=flat-square">
   </a>
-  <a href="https://huggingface.co/mingyurun/LSM-pretrained/tree/main">
+  <a href="https://huggingface.co/mingyurun/LSM-pretrained/">
     <img src="https://img.shields.io/badge/Weights-HuggingFace-yellow?style=flat-square">
   </a>
   <a href="https://github.com/MingyuChoi-run/LSM">
@@ -177,21 +177,21 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 -
 
 ### Pretrained Models
 
-Pretrained models are available at [Hugging Face](https://huggingface.co/mingyurun/LSM-pretrained/tree/main).
+Pretrained models are available at [Hugging Face](https://huggingface.co/mingyurun/LSM-pretrained).
 
 After downloading the pretrained models, put them into the `experiments/pretrained_models` folder
 
 | Model | Task | Scale | Download |
 | :---: | :---: | :---: | :---: |
-| LSM-S | Classical Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/LSM_S_SR_x2.pth) |
-| LSM-S | Classical Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/LSM_S_SR_x3.pth) |
-| LSM-S | Classical Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/LSM_S_SR_x4.pth) |
-| LSM | Classical Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/LSM_SR_x2.pth) |
-| LSM | Classical Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/LSM_SR_x3.pth) |
-| LSM | Classical Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/LSM_SR_x4.pth) |
-| LSM-light | Lightweight Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/LSM_light_lightSR_x2.pth) |
-| LSM-light | Lightweight Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/LSM_light_lightSR_x3.pth) |
-| LSM-light | Lightweight Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/LSM_light_lightSR_x4.pth) |
+| LSM-S | Classical Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_S_SR_x2_finetune/models/net_g_best.pth) |
+| LSM-S | Classical Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_S_SR_x3_finetune/models/net_g_best.pth) |
+| LSM-S | Classical Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_S_SR_x4_finetune/models/net_g_best.pth) |
+| LSM | Classical Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_SR_x2_finetune/models/net_g_best.pth) |
+| LSM | Classical Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_SR_x3_finetune/models/net_g_best.pth) |
+| LSM | Classical Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_SR_x4_finetune/models/net_g_best.pth) |
+| LSM-light | Lightweight Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_light_lightSR_x2_finetune/models/net_g_best.pth) |
+| LSM-light | Lightweight Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_light_lightSR_x3_finetune/models/net_g_best.pth) |
+| LSM-light | Lightweight Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_light_lightSR_x4_finetune/models/net_g_best.pth) |
 
 ### Commands
 
