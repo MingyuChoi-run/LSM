@@ -3,10 +3,10 @@ Linear Recurrent Unit with Semantic Modulation for Image Super-Resolution
 </h1>
 
 <p align="center">
-  <a href="#"><strong>Mingyu Choi</strong></a> ·
-  <a href="#"><strong>Woo Kyoung Han</strong></a> ·
-  <a href="#"><strong>Sunghoon Im</strong></a> ·
-  <a href="#"><strong>Kyong Hwan Jin</strong></a>
+  <strong>Mingyu Choi</strong> ·
+  <a href="https://scholar.google.com/citations?user=kieVQZwAAAAJ&hl=en&oi=sra"><strong>Woo Kyoung Han</strong></a> ·
+  <a href="https://scholar.google.com/citations?user=37fSLtAAAAAJ&hl=en"><strong>Sunghoon Im</strong></a> ·
+  <a href="https://scholar.google.com/citations?user=aLYNnyoAAAAJ&hl=en"><strong>Kyong Hwan Jin</strong></a>
 </p>
 
 <h2 align="center">
@@ -15,10 +15,10 @@ CVPR 2026 Findings
 
 <p align="center">
   <a href="####">
-    <img src="https://img.shields.io/badge/Project-Page-blue?style=flat-square&logo=github">
-  </a>
-  <a href="####">
     <img src="https://img.shields.io/badge/arXiv-Coming%20Soon-b31b1b?style=flat-square">
+  </a>
+  <a href="https://huggingface.co/MingyuChoi-run/LSM-pretrained">
+    <img src="https://img.shields.io/badge/Weights-HuggingFace-yellow?style=flat-square">
   </a>
   <a href="https://github.com/MingyuChoi-run/LSM">
     <img src="https://img.shields.io/badge/Code-GitHub-black?style=flat-square&logo=github">
@@ -177,9 +177,21 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 -
 
 ### Pretrained Models
 
-Pretrained models will be released soon.
+Pretrained models are available at [Hugging Face](https://huggingface.co/MingyuChoi-run/LSM-pretrained).
 
 After downloading the pretrained models, put them into the `experiments/pretrained_models` folder
+
+| Model | Task | Scale | Download |
+| :---: | :---: | :---: | :---: |
+| LSM-S | Classical Image SR | ×2 | [Download](https://huggingface.co/MingyuChoi-run/LSM-pretrained/resolve/main/LSM_S_SR_x2.pth) |
+| LSM-S | Classical Image SR | ×3 | [Download](https://huggingface.co/MingyuChoi-run/LSM-pretrained/resolve/main/LSM_S_SR_x3.pth) |
+| LSM-S | Classical Image SR | ×4 | [Download](https://huggingface.co/MingyuChoi-run/LSM-pretrained/resolve/main/LSM_S_SR_x4.pth) |
+| LSM | Classical Image SR | ×2 | [Download](https://huggingface.co/MingyuChoi-run/LSM-pretrained/resolve/main/LSM_SR_x2.pth) |
+| LSM | Classical Image SR | ×3 | [Download](https://huggingface.co/MingyuChoi-run/LSM-pretrained/resolve/main/LSM_SR_x3.pth) |
+| LSM | Classical Image SR | ×4 | [Download](https://huggingface.co/MingyuChoi-run/LSM-pretrained/resolve/main/LSM_SR_x4.pth) |
+| LSM-light | Lightweight Image SR | ×2 | [Download](https://huggingface.co/MingyuChoi-run/LSM-pretrained/resolve/main/LSM_light_lightSR_x2.pth) |
+| LSM-light | Lightweight Image SR | ×3 | [Download](https://huggingface.co/MingyuChoi-run/LSM-pretrained/resolve/main/LSM_light_lightSR_x3.pth) |
+| LSM-light | Lightweight Image SR | ×4 | [Download](https://huggingface.co/MingyuChoi-run/LSM-pretrained/resolve/main/LSM_light_lightSR_x4.pth) |
 
 ### Commands
 
@@ -300,4 +312,4 @@ If you find this work useful, please consider citing:
 
 ## Acknowledgements
 
-This code is built on [BasicSR](https://github.com/XPixelGroup/BasicSR). We thank the authors of open-source image restoration repositories for their valuable contributions.
+This code is built on [BasicSR](https://github.com/XPixelGroup/BasicSR). We thank the authors for their valuable contributions.
