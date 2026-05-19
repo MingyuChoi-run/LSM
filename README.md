@@ -183,15 +183,15 @@ After downloading the pretrained models, put them into the `experiments/pretrain
 
 | Model | Task | Scale | Download |
 | :---: | :---: | :---: | :---: |
-| LSM-S | Classical Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_S_SR_x2_finetune/models/net_g_best.pth) |
-| LSM-S | Classical Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_S_SR_x3_finetune/models/net_g_best.pth) |
-| LSM-S | Classical Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_S_SR_x4_finetune/models/net_g_best.pth) |
-| LSM | Classical Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_SR_x2_finetune/models/net_g_best.pth) |
-| LSM | Classical Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_SR_x3_finetune/models/net_g_best.pth) |
-| LSM | Classical Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_SR_x4_finetune/models/net_g_best.pth) |
-| LSM-light | Lightweight Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_light_lightSR_x2_finetune/models/net_g_best.pth) |
-| LSM-light | Lightweight Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_light_lightSR_x3_finetune/models/net_g_best.pth) |
-| LSM-light | Lightweight Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/tree/main/train_LSM_light_lightSR_x4_finetune/models/net_g_best.pth) |
+| LSM-S | Classical Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/blob/main/train_LSM_S_SR_x2_finetune/models/net_g_best.pth) |
+| LSM-S | Classical Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/blob/main/train_LSM_S_SR_x3_finetune/models/net_g_best.pth) |
+| LSM-S | Classical Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/blob/main/train_LSM_S_SR_x4_finetune/models/net_g_best.pth) |
+| LSM | Classical Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/blob/main/train_LSM_SR_x2_finetune/models/net_g_best.pth) |
+| LSM | Classical Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/blob/main/train_LSM_SR_x3_finetune/models/net_g_best.pth) |
+| LSM | Classical Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/blob/main/train_LSM_SR_x4_finetune/models/net_g_best.pth) |
+| LSM-light | Lightweight Image SR | ×2 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/blob/main/train_LSM_light_lightSR_x2_finetune/models/net_g_best.pth) |
+| LSM-light | Lightweight Image SR | ×3 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/blob/main/train_LSM_light_lightSR_x3_finetune/models/net_g_best.pth) |
+| LSM-light | Lightweight Image SR | ×4 | [Download](https://huggingface.co/mingyurun/LSM-pretrained/blob/main/train_LSM_light_lightSR_x4_finetune/models/net_g_best.pth) |
 
 ### Commands
 
