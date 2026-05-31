@@ -14,8 +14,8 @@ CVPR 2026 Findings
 </h2>
 
 <p align="center">
-  <a href="####">
-    <img src="https://img.shields.io/badge/arXiv-Coming%20Soon-b31b1b?style=flat-square">
+  <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Choi_Linear_Recurrent_Unit_with_Semantic_Modulation_for_Image_Super-Resolution_CVPRF_2026_paper.html">
+    <img src="https://img.shields.io/badge/Paper-CVF-blue?style=flat-square">
   </a>
   <a href="https://huggingface.co/mingyurun/LSM-pretrained/">
     <img src="https://img.shields.io/badge/Weights-HuggingFace-yellow?style=flat-square">
@@ -297,18 +297,16 @@ python basicsr/test.py -opt options/test/test_LSM_light_lightSR_x4_finetune.yml
 
 If you find this work useful, please consider citing:
 
-```bash
-# To be updated soon.
-```
-
-<!-- ```bibtex
-@inproceedings{choi2026lsm,
-  title={Linear Recurrent Unit with Semantic Modulation for Image Super-Resolution},
-  author={Choi, Mingyu and Han, Woo Kyoung and Im, Sunghoon and Jin, Kyong Hwan},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2026}
+```bibtex
+@InProceedings{Choi_2026_CVPR,
+    author    = {Choi, Mingyu and Han, Woo Kyoung and Im, Sunghoon and Jin, Kyong Hwan},
+    title     = {Linear Recurrent Unit with Semantic Modulation for Image Super-Resolution},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Findings},
+    month     = {June},
+    year      = {2026},
+    pages     = {4950-4960}
 }
-``` -->
+```
 
 ## Acknowledgements
 
