@@ -14,14 +14,14 @@ CVPR 2026 Findings
 </h2>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2606.19901">
+    <img src="https://img.shields.io/badge/arXiv-2606.19901-b31b1b?style=flat-square">
+  </a>
   <a href="https://openaccess.thecvf.com/content/CVPR2026F/html/Choi_Linear_Recurrent_Unit_with_Semantic_Modulation_for_Image_Super-Resolution_CVPRF_2026_paper.html">
     <img src="https://img.shields.io/badge/Paper-CVF-blue?style=flat-square">
   </a>
   <a href="https://huggingface.co/mingyurun/LSM-pretrained/">
     <img src="https://img.shields.io/badge/Weights-HuggingFace-yellow?style=flat-square">
-  </a>
-  <a href="https://github.com/MingyuChoi-run/LSM">
-    <img src="https://img.shields.io/badge/Code-GitHub-black?style=flat-square&logo=github">
   </a>
 </p>
 
